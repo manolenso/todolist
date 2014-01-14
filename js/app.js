@@ -24,7 +24,7 @@ app.controller('TodoCtrl', function($scope, filterFilter, $http, $location){
         $scope.allchecked = !$scope.remaining;
     }, true)
 
-    if($location.path() == ''){ $location.path('/')}
+    if($location.path() === ''){ $location.path('/')}
     $scope.location = $location;
     $scope.$watch('location.path()',function(path){
         $scope.statusFilter = 
