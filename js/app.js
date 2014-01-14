@@ -15,7 +15,7 @@ app.controller('TodoCtrl', function($scope, filterFilter, $http, $location){
     
     $http.get('todos.php').success(function(data){
         $scope.todos = data;
-        $scope.placeholder = "Ajouter une Nouvelle photo";
+        $scope.placeholder = "Ajouter un nouveau Buzz TV ";
         
     })
     
