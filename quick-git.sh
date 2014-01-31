@@ -5,7 +5,7 @@
 
 git add .
 echo "Give commit Name:"
-read $commit
+read commit
 git commit -m '$commit'
 git push
 git status
